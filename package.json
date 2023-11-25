@@ -4,8 +4,8 @@
   "description": "Cadastra e gera um ranking de produtos, ou locais com melhores valores",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:coverage": "jest --coverage",
+    "test": "jest --maxWorkers=1 --verbose",
+    "test:coverage": "jest --coverage --maxWorkers=1 --collectCoverage=true --collectCoverageFrom=src/**/*.ts",
     "dev": "nodemon --watch 'src/' --exec 'ts-node src/' -e ts"
   },
   "author": "jairochaves2",
