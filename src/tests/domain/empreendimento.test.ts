@@ -1,5 +1,5 @@
-import Empreendimento from "./empreendimento";
-import Produto from "./produto";
+import Empreendimento from "../../domain/empreendimento";
+import Produto from "../../domain/produto";
 
 describe("Empreendimento", () => {
   it("should create an 'empreendimento'", () => {
@@ -34,12 +34,11 @@ describe("Empreendimento", () => {
 
     expect(empreendimento.getId()).toBe(5);
     expect(empreendimento.getProdutos()).toHaveLength(2);
-  })
+  });
 
   it("should create an 'empreendimento' nome and change it", () => {
     const empreendimento = new Empreendimento("Empreendimento");
     empreendimento.setNome("Novo nome");
     expect(empreendimento.getNome()).toBe("Novo nome");
-    
-  })
+  });
 });
