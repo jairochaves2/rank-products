@@ -1,4 +1,4 @@
-import Produto from "../../domain/produto";
+import Produto from "../../domain/models/produto";
 
 describe("Produto", () => {
   it("should create an 'produto'", () => {

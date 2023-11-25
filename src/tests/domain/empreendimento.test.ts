@@ -1,5 +1,5 @@
-import Empreendimento from "../../domain/empreendimento";
-import Produto from "../../domain/produto";
+import Empreendimento from "../../domain/models/empreendimento";
+import Produto from "../../domain/models/produto";
 
 describe("Empreendimento", () => {
   it("should create an 'empreendimento'", () => {
