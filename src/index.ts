@@ -1,11 +1,7 @@
-import server from "./server";
+import HttpServer from "./domain/interfaces/http-server";
+import ExpressAdapter from "./infra/adapters/express-adapter";
 
-server.get("/", (req, res) => {
-  res.send({ a: "Hello World!" });
-});
+const server: HttpServer = new ExpressAdapter();
 
-const app = server.listen(3000, () => {
-  console.log("Server is running on port 3000");
-});
+server.start(3000);
 
-export { app };
