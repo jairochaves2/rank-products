@@ -20,7 +20,7 @@ export class EmpreendimentoInMemoryAdapter implements EmpreendimentoRepository {
   update(empreendimento: Empreendimento): Promise<Empreendimento> {
     const id = empreendimento.getId();
     if (!id) {
-      return Promise.reject("Id não informado");
+      throw new Error("Id não informado");
     }
 
     inMemory.set(id, empreendimento);
