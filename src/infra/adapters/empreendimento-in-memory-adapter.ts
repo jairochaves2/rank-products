@@ -1,5 +1,5 @@
 import Empreendimento from "../../domain/models/empreendimento";
-import EmpreendimentoRepository from "../../domain/repositories/empreendimento-repository";
+import EmpreendimentoRepository from "../../domain/interfaces/repositories/empreendimento-repository";
 
 const inMemory = new Map<number, Empreendimento>();
 

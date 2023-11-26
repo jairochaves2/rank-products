@@ -1,6 +1,6 @@
 import Empreendimento from "../../domain/models/empreendimento";
-import EmpreendimentoRepository from "../../domain/repositories/empreendimento-repository";
-import EmpreendimentoServiceRepo from "../../domain/repositories/servicies/empreendimento-service-repo";
+import EmpreendimentoRepository from "../../domain/interfaces/repositories/empreendimento-repository";
+import EmpreendimentoServiceRepo from "../../domain/interfaces/repositories/servicies/empreendimento-service-repo";
 
 export default class EmpreendimentoService
   implements EmpreendimentoServiceRepo

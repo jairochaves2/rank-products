@@ -1,6 +1,6 @@
-import Empreendimento from "../models/empreendimento";
+import Empreendimento from "../../../models/empreendimento";
 
-export default interface EmpreendimentoRepository {
+export default interface EmpreendimentoServiceRepo {
   add(empreendimento: Empreendimento): Promise<Empreendimento>;
   getAll(): Promise<Empreendimento[]>;
   get(id: number): Promise<Empreendimento | undefined>;
